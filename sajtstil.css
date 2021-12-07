@@ -5,11 +5,14 @@ body {
 	margin: 0;
 	padding: 0;
 }
+/* #region NAVBAR STIL */
 .navbar {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
-	background-color: #333;
+	background-color: #212122;
 	color: white;
 }
 .brand-title {
@@ -22,6 +25,7 @@ body {
 	display: flex;
 }
 .navbar-links li {
+	font-size: 1.5rem;
 	list-style: none;
 }
 .navbar-links li a {
@@ -31,7 +35,7 @@ body {
 	display: block;
 }
 .navbar-links li:hover {
-	background-color: #555;
+	background-color: #1d1d1d;
 }
 .toggle-button {
 	position: absolute;
@@ -49,7 +53,13 @@ body {
 	background-color: white;
 	border-radius: 10px;
 }
-@media (max-width: 600px) {
+.logo {
+	height: 2rem;
+}
+/* #endregion*/
+
+/* #region HAMBURGER MENI */
+@media (max-width: 800px) {
 	.toggle-button {
 		display: flex;
 	}
@@ -74,4 +84,22 @@ body {
 	.navbar-links.active {
 		display: flex;
 	}
+}
+/*#endregion*/
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	width: 100%;
+	height: 100vh;
+}
+#div1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("images/techwlppr.jpg");
+	background-size: cover;
+	background-position-x: center;
 }
