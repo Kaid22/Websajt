@@ -48,6 +48,7 @@ body {
 	padding: 1rem;
 }
 .toggle-button {
+	margin-top: 9px;
 	position: absolute;
 	top: 0.75rem;
 	right: 1rem;
