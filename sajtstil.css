@@ -248,7 +248,7 @@ body {
 /* /3 */
 
 /* 4 */
-img {
+.slides {
 	transform: scale(1.5, 1.5);
 	-webkit-animation-name: zoomin;
 	-webkit-animation-duration: 40s;
