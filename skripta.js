@@ -1,6 +1,6 @@
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-const parallax = document.getElementById("div1");
+const parallax = document.getElementsByClassName("parallax");
 
 toggleButton.addEventListener("click", () => {
 	navbarLinks.classList.toggle("active");
@@ -8,9 +8,11 @@ toggleButton.addEventListener("click", () => {
 
 // parallax pozadina
 
-window.addEventListener("scroll", function () {
-	let offset = window.scrollY;
-	parallax.style.backgroundPositionY = offset * 0.8 + "px";
+Array.from(parallax).forEach((element) => {
+	window.addEventListener("scroll", function () {
+		let offset = window.scrollY;
+		element.style.backgroundPositionY = offset * 0.8 + "px";
+	});
 });
 
 //slideshow
